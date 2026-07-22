@@ -1,103 +1,126 @@
-/* الألوان المستخدمة في التصميم */
 :root {
-  --text-color: #f1f2f6;
-  --bg-color: #2f3640;
-  --card-bg-color: #3b4252;
-  --link-color: #74b9ff;
-  --heading-color: #dfe4ea;
+  --primary-color: #3b5998;
+  --secondary-color: #6c757d;
+  --accent-color: #e07a5f;
+  --bg-color: #f8f9fa;
+  --card-bg-color: #ffffff;
+  --text-color: #2b2d42;
+  --heading-color: #1d3557;
+  --border-color: #e9ecef;
+  --link-color: #457b9d;
 }
 
-/* تنسيقات الحاوية الرئيسية للصفحة */
 .impressumPageContainer {
-  
-  padding: 0 20px;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  color: var(--text-color);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 20px;
   background-color: var(--bg-color);
-  padding: 50px;
-  border-radius: 10px;
+  font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+  color: var(--text-color);
+  line-height: 1.8;
 }
 
-/* تنسيقات العنوان الرئيسي */
 .impressumHeader {
-  text-align: left;
+  text-align: center;
   margin-bottom: 40px;
 }
 
 .impressumHeader h1 {
-  font-size: 3.5em;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: var(--heading-color);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
 }
 
-.impressumHeader p {
-  font-size: 1.2em;
-  color: #a4b0be;
+.impressumHeader h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
 }
 
-/* تنسيقات شبكة البطاقات (Grid) */
+.subtitle {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
 .impressumGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 25px;
 }
 
-/* تنسيقات البطاقة الواحدة */
 .impressumCard {
   background-color: var(--card-bg-color);
-  padding: 30px;
+  padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: var(--text-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .impressumCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .impressumCard h3 {
-  font-size: 1.4em;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: var(--heading-color);
-  border-bottom: 2px solid #57606f;
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
 
 .impressumCard p {
-  font-size: 1em;
+  font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.impressumCard p:last-child {
+  margin-bottom: 0;
 }
 
 .impressumCard a {
   color: var(--link-color);
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .impressumCard a:hover {
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
-/* تنسيق البطاقات الكاملة العرض */
 .fullWidth {
   grid-column: 1 / -1;
 }
 
-/* تنسيقات الخطوط العريضة */
 .impressumCard p strong {
   color: var(--heading-color);
 }
 
-/* التجاوبية (Responsive Design) للشاشات الصغيرة */
 @media (max-width: 768px) {
+  .impressumPageContainer {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+
   .impressumGrid {
     grid-template-columns: 1fr;
   }
+
   .impressumHeader h1 {
-    font-size: 2.5em;
+    font-size: 2rem;
   }
 }

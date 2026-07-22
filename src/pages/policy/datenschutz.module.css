@@ -1,63 +1,93 @@
 :root {
-  --text-color: #e2e8f0; /* لون النص الفاتح */
-  --bg-color: #1a202c; /* لون الخلفية الداكنة */
-  --card-bg-color: #2d3748; /* لون خلفية الأقسام */
-  --link-color: #63b3ed; /* لون الروابط الأزرق الفاتح */
-  --heading-color: #cbd5e0; /* لون العناوين الفاتح */
+  --primary-color: #3b5998;
+  --secondary-color: #6c757d;
+  --accent-color: #e07a5f;
+  --bg-color: #f8f9fa;
+  --card-bg-color: #ffffff;
+  --text-color: #2b2d42;
+  --heading-color: #1d3557;
+  --border-color: #e9ecef;
+  --link-color: #457b9d;
 }
 
 .datenschutzContainer {
-  padding: 50px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 20px;
   background-color: var(--bg-color);
-  border-radius: 10px;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
   color: var(--text-color);
   line-height: 1.8;
 }
 
 .datenschutzHeader {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .datenschutzHeader h1 {
-  font-size: 3em;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--heading-color);
-  border-bottom: 2px solid var(--link-color);
-  padding-bottom: 15px;
+  margin-bottom: 10px;
+  position: relative;
   display: inline-block;
+}
+
+.datenschutzHeader h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-top: 10px;
 }
 
 .datenschutzSection {
   background-color: var(--card-bg-color);
-  padding: 40px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
 }
 
 .sectionTitle {
-  font-size: 2em;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--heading-color);
-  margin-bottom: 25px;
-}
-
-.sectionContent {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
 }
 
 .sectionContent h3 {
-  font-size: 1.5em;
+  font-size: 1.2rem;
   color: var(--link-color);
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
 .sectionContent p {
-  font-size: 1em;
-  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 15px;
   color: var(--text-color);
+}
+
+.sectionContent ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.sectionContent li {
+  margin-bottom: 8px;
 }
 
 .sectionContent strong {
@@ -67,23 +97,39 @@
 .sectionContent a {
   color: var(--link-color);
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .sectionContent a:hover {
+  color: var(--accent-color);
   text-decoration: underline;
+}
+
+.contactCard {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+  margin-top: 15px;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
   .datenschutzContainer {
-    padding: 30px;
+    padding: 20px 15px;
+    margin: 20px auto;
   }
+  
   .datenschutzHeader h1 {
-    font-size: 2.5em;
+    font-size: 2rem;
   }
+  
   .datenschutzSection {
-    padding: 25px;
+    padding: 20px;
   }
+  
   .sectionTitle {
-    font-size: 1.8em;
+    font-size: 1.3rem;
   }
 }

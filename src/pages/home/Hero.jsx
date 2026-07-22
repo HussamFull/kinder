@@ -1,12 +1,158 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Hero() {
   return (
     <>
- {/* ======= Hero Section ======= */}
+      {/* ======= Hero Section ======= */}
+      <section id="hero" className="d-flex align-items-center justify-content-center position-relative overflow-hidden" style={{ minHeight: '100vh', padding: '120px 0 60px' }}>
+        
+        {/* طبقة شفافة زيتي ميرمية ناعمة جداً تبرز الصورة وتمنح راحة بصرية */}
+        <div className="hero-overlay" style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(44, 53, 48, 0.45)',
+          backdropFilter: 'blur(1.5px)',
+          zIndex: 1
+        }}></div>
+
+        <div className="container position-relative" data-aos="fade-up" style={{ zIndex: 2 }}>
+          
+          {/* قسم النصوص الرئيسي */}
+          <div className="row justify-content-center text-center mb-5" data-aos="fade-up" data-aos-delay={150}>
+            <div className="col-xl-8 col-lg-10">
+              
+              {/* شارة اللقب بلون ترابي دافئ متناسق */}
+              <span className="d-inline-block text-uppercase mb-3 px-4 py-2 rounded-pill shadow-sm" style={{
+                color: '#fff',
+                backgroundColor: 'rgba(186, 128, 104, 0.9)', // لون ترابي دافئ (Warm Clay)
+                fontSize: '0.85rem',
+                letterSpacing: '2.5px',
+                fontWeight: '600',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
+              }}>
+                dipl. Elementarpädagogin
+              </span>
+
+              {/* الاسم بتدرج نقي وعصري */}
+              <h1 className="display-3 fw-bold text-white mb-3" style={{ letterSpacing: '-0.5px' }}>
+                Ruth <span style={{ color: '#F2D6BD' }}>Alonso Fox</span>
+              </h1>
+
+              {/* الشعار */}
+              <p className="lead text-light mb-0 mx-auto" style={{ fontSize: '1.35rem', maxWidth: '600px', fontWeight: '400' }}>
+                Ich begleite Kinder <span style={{ color: '#F2D6BD', fontWeight: '600' }}>in Umbruchsphasen.</span>
+              </p>
+            </div>
+          </div>
+
+          {/* الحاوية الكبرى الجامعة للأزرار بتصميم عصري راقي (Master Container) */}
+          <div className="row justify-content-center" data-aos="zoom-in" data-aos-delay={250}>
+            <div className="col-xl-10 col-lg-11">
+              <div className="hero-nav-container p-3 p-md-4 rounded-pill d-flex flex-wrap justify-content-center align-items-center gap-3">
+                
+                {/* 1. Jetzt anfragen */}
+                <div className="hero-nav-item flex-fill text-center p-2">
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                    <div className="mini-icon-circle d-flex align-items-center justify-content-center">
+                      <i className="ri-whatsapp-line fs-5" style={{ color: '#C86D51' }} />
+                    </div>
+                    <a href="https://wa.me/qr/UD7U74XZS6PXN1" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
+                      Jetzt anfragen
+                    </a>
+                  </div>
+                </div>
+
+                {/* فاصل جمالي خفيف للشاشات الكبيرة */}
+                <div className="nav-divider d-none d-lg-block"></div>
+
+                {/* 2. Online buchen */}
+                <div className="hero-nav-item flex-fill text-center p-2">
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                    <div className="mini-icon-circle d-flex align-items-center justify-content-center">
+                      <i className="ri-calendar-check-line fs-5" style={{ color: '#C86D51' }} />
+                    </div>
+                    <Link to={"Booking"} className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
+                      Online buchen
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="nav-divider d-none d-lg-block"></div>
+
+                {/* 3. Leistungen */}
+                <div className="hero-nav-item flex-fill text-center p-2">
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                    <div className="mini-icon-circle d-flex align-items-center justify-content-center">
+                      <i className="ri-service-line fs-5" style={{ color: '#C86D51' }} />
+                    </div>
+                    <Link to={"Services"} className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
+                      Leistungen
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="nav-divider d-none d-lg-block"></div>
+
+                {/* 4. Portfolio */}
+                <div className="hero-nav-item flex-fill text-center p-2">
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                    <div className="mini-icon-circle d-flex align-items-center justify-content-center">
+                    <i className="bi bi-collection fs-5" style={{ color: '#C86D51' }} />
+                    </div>
+                    <Link to={"Portfolio"} className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
+                      Portfolio
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="nav-divider d-none d-lg-block"></div>
+
+                {/* 5. Kontakt */}
+                <div className="hero-nav-item flex-fill text-center p-2">
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                    <div className="mini-icon-circle d-flex align-items-center justify-content-center">
+                      <i className="ri-mail-send-line fs-5" style={{ color: '#C86D51' }} />
+                    </div>
+                    <Link to={"Contact"} className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
+                      Kontakt
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      {/* End Hero */}
+    </>
+  );
+}
+
+{/* */}
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
+export default function Hero() {
+  return (
+    <>
+
 <section id="hero" className="d-flex align-items-center justify-content-center">
   <div className="container" data-aos="fade-up">
     <div className="row justify-content-center" data-aos="fade-up" data-aos-delay={150}>
@@ -60,8 +206,9 @@ export default function Hero() {
     </div>
   </div>
 </section>
-{/* End Hero */}
 
-    </>
+
+  
   )
 }
+*/}

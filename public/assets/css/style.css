@@ -1477,3 +1477,64 @@ section {
 .navbar-mobile .dropdown ul li a {
   padding: 12px 20px;
 }
+
+
+
+
+
+
+/* =========================*/
+
+
+/* الحاوية الكبرى (Master Pill Container) للروابط بتصميم زجاجي ترابي دافئ */
+.hero-nav-container {
+  background: rgba(35, 45, 40, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(242, 214, 189, 0.25);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* عناصر القوائم الفردية داخل الحاوية */
+.hero-nav-item {
+  position: relative;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+}
+
+/* دائرة الأيقونة المصغرة ذات اللمسة الترابية */
+.hero-nav-item .mini-icon-circle {
+  width: 36px;
+  height: 36px;
+  background: rgba(242, 214, 189, 0.15);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* تأثير التمرير (Hover) الاحترافي لكل زر */
+.hero-nav-item:hover {
+  background: rgba(242, 214, 189, 0.12);
+  transform: translateY(-3px);
+}
+
+.hero-nav-item:hover .mini-icon-circle {
+  background: rgba(242, 214, 189, 0.25);
+  transform: scale(1.1);
+}
+
+.hero-nav-item a {
+  transition: color 0.3s ease;
+}
+
+.hero-nav-item:hover a {
+  color: #F2D6BD !important; /* يتحول النص لدرجة الكريمي الدافئ عند التحويم */
+}
+
+/* الفواصل بين العناصر */
+.nav-divider {
+  width: 1px;
+  height: 25px;
+  background-color: rgba(242, 214, 189, 0.2);
+}
