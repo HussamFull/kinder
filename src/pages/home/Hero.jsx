@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="col-xl-2 col-md-4">
         <div className="icon-box">
           <i className="ri-store-line" />
-          <h3><a href="https://wa.me/qr/UD7U74XZS6PXN1" >Book now</a>
+          <h3><a href="https://wa.me/qr/UD7U74XZS6PXN1" >Jetzt anfragen</a>
 </h3>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="col-xl-2 col-md-4">
         <div className="icon-box">
           <i className="ri-bar-chart-box-line" />
-          <h3><Link to={"Booking"}>Booking  </Link></h3>
+          <h3><Link to={"Booking"}>Online buchen  </Link></h3>
         </div>
       </div>
 
@@ -40,15 +40,10 @@ export default function Hero() {
       <div className="col-xl-2 col-md-4">
         <div className="icon-box">
           <i className="ri-bar-chart-box-line" />
-          <h3><Link to={"Apartment"}>Apartment </Link></h3>
+          <h3><Link to={"Services"}>Leistungen </Link></h3>
         </div>
       </div>
-        <div className="col-xl-2 col-md-4">
-        <div className="icon-box">
-          <i className="ri-database-2-line" />
-          <h3><Link to={"Car"}>Car</Link></h3>
-        </div>
-      </div>
+      
       <div className="col-xl-2 col-md-4">
         <div className="icon-box">
           <i className="ri-calendar-todo-line" />
@@ -58,7 +53,7 @@ export default function Hero() {
       <div className="col-xl-2 col-md-4">
         <div className="icon-box">
           <i className="ri-paint-brush-line" />
-          <h3><Link to={"Contact"}>Contact</Link></h3>
+          <h3><Link to={"Contact"}>Kontakt</Link></h3>
         </div>
       </div>
     

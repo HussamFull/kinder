@@ -172,57 +172,111 @@ const serviceImages = ["service1", "service2"];
                 </div>
             </section>
 
-            {/* ======= Counts Section ======= */}
-            <section id="counts" className="counts">
-                <div className="container" data-aos="fade-up">
-                    <div className="row no-gutters">
-                        <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100" />
-                        <div className="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
-                            <div className="content d-flex flex-column justify-content-center">
-                                <h3>Exklusiver Aufenthalt & Erstklassige Mobilität: Ihr Rundum-Service in Wien!</h3>
-                                <p>Planen Sie eine Reise nach Wien? Wir machen Ihren Aufenthalt unvergesslich!</p>
-                                <div className="row">
-                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div className="count-box">
-                                            <i className="bi bi-emoji-smile"></i>
-                                            <p><strong>🛒 Stilvolles Apartment:</strong> Ein Zuhause mit Wohlfühlfaktor.</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div className="count-box">
-                                            <i className="bi bi-journal-richtext"></i>
-                                            <p><strong>🚗 Exklusiver Fahrservice:</strong> Sichere und pünktliche Fahrten.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          {/* ======= About / Value Proposition Section ======= */}
+      <section id="counts" className="counts py-5" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container" data-aos="fade-up">
+          <div className="row g-4 align-items-center">
+            
+            {/* Image Column */}
+            <div 
+              className="col-xl-5 d-flex align-items-stretch justify-content-center" 
+              data-aos="fade-right" 
+              data-aos-delay="100"
+            >
+              <div 
+                className="image-container w-100 rounded-4 overflow-hidden shadow-sm border" 
+                style={{ 
+                  minHeight: '325px', 
+                  backgroundImage: `url('/assets/img/ruth-alonso-fox-about.png')`, 
+                  backgroundSize: 'cover', 
+                  backgroundPosition: 'center' 
+                }}
+              >
+                {/* سيتم وضع الصورة المصممة هنا */}
+              </div>
+            </div>
 
-            {/* ======= Testimonials Section ======= */}
-            <section id="testimonials" className="testimonials">
-                <div className="container" data-aos="zoom-in">
-                    <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <div className="testimonial-item">
-                                    <img src="/assets/img/team/team-1.png" className="testimonial-img" alt="Herr Alnablsi" />
-                                    <h3>Herr Alnablsi</h3>
-                                    <h4>Inhaber & Ihr Gastgeber in Wien</h4>
-                                    <p>
-                                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Mein Ziel ist es, Ihnen nicht nur eine Unterkunft, sondern ein erstklassiges Erlebnis in Wien zu bieten.
-                                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-pagination"></div>
+            {/* Content Column */}
+            <div 
+              className="col-xl-7 ps-0 ps-lg-5 d-flex align-items-stretch" 
+              data-aos="fade-left" 
+              data-aos-delay="100"
+            >
+              <div className="content d-flex flex-column justify-content-center">
+                <span className="badge px-3 py-2 mb-3 shadow-sm align-self-start" style={{ backgroundColor: '#d98a72', color: '#fff', borderRadius: '20px', fontSize: '0.85rem' }}>
+                  Achtsamkeit &amp; Vertrauen
+                </span>
+                <h3 className="fw-bold mb-3" style={{ color: '#2d3748', lineHeight: '1.3' }}>
+                  Einfühlsame Begleitung &amp; Neue Perspektiven für Ihr Kind
+                </h3>
+                <p className="text-muted fs-6 mb-4 lh-lg">
+                  Veränderungen im Leben eines Kindes erfordern Feingefühl und eine sichere Umgebung. Gemeinsam stärken wir das Selbstvertrauen Ihres Kindes und begleiten Sie als Familie Schritt für Schritt durch jede Umbruchsphase.
+                </p>
+
+                <div className="row g-3">
+                  {/* Feature 1 */}
+                  <div className="col-md-6 d-md-flex align-items-md-stretch">
+                    <div className="count-box p-3 rounded-3 bg-light border w-100 d-flex align-items-start">
+                      <div className="icon me-3 p-2 rounded-circle text-center" style={{ backgroundColor: '#fdf3f0', color: '#d98a72', minWidth: '45px', height: '45px' }}>
+                        <i className="bx bx-heart fs-3"></i>
+                      </div>
+                      <div>
+                        <h6 className="fw-bold mb-1" style={{ color: '#2d3748' }}>Geschützter Raum</h6>
+                        <p className="text-muted small mb-0 lh-base">Vertrauensvolle Atmosphäre, in der sich Ihr Kind geborgen fühlt.</p>
+                      </div>
                     </div>
+                  </div>
+
+                  {/* Feature 2 */}
+                  <div className="col-md-6 d-md-flex align-items-md-stretch">
+                    <div className="count-box p-3 rounded-3 bg-light border w-100 d-flex align-items-start">
+                      <div className="icon me-3 p-2 rounded-circle text-center" style={{ backgroundColor: '#f0f4f1', color: '#8a9a86', minWidth: '45px', height: '45px' }}>
+                        <i className="bx bx-smile fs-3"></i>
+                      </div>
+                      <div>
+                        <h6 className="fw-bold mb-1" style={{ color: '#2d3748' }}>Stärkung &amp; Wachstum</h6>
+                        <p className="text-muted small mb-0 lh-base">Ressourcen aktivieren und gestärkt in die Zukunft blicken.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ======= Testimonials Section ======= */}
+      <section id="testimonials" className="testimonials py-5" style={{ backgroundColor: '#faf9f6' }}>
+        <div className="container" data-aos="zoom-in">
+          <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div className="swiper-wrapper">
+              
+              <div className="swiper-slide">
+                <div className="testimonial-item text-center bg-white p-4 p-md-5 rounded-4 shadow-sm border mx-auto" style={{ maxWidth: '800px' }}>
+                  <img 
+                    src="/assets/img/team/ruth-alonso-fox.jpg" 
+                    className="testimonial-img rounded-circle mb-3 border border-3 shadow-sm" 
+                    alt="Ruth Alonso Fox" 
+                    style={{ width: '90px', height: '90px', objectFit: 'cover', borderColor: '#d98a72' }}
+                  />
+                  <h3 className="fw-bold fs-4 mb-1" style={{ color: '#2d3748' }}>Ruth Alonso Fox</h3>
+                  <h4 className="fs-6 fw-normal text-muted mb-4">Kinder im Wandel | Expertin für Kinderbegleitung</h4>
+                  <p className="fst-italic text-muted fs-6 lh-lg px-lg-4">
+                    <i className="bx bxs-quote-alt-left quote-icon-left me-2" style={{ color: '#d98a72' }}></i>
+                    Mein Ziel ist es, Kindern in Zeiten des Wandels Orientierung, Sicherheit und Vertrauen zu schenken – damit sie mit Freude und innerer Stärke ihren eigenen Weg gehen können.
+                    <i className="bx bxs-quote-alt-right quote-icon-right ms-2" style={{ color: '#d98a72' }}></i>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div className="swiper-pagination mt-4"></div>
+          </div>
+        </div>
+      </section>
         </div>
     );
 }

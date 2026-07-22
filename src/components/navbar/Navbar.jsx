@@ -24,7 +24,7 @@ export default function Navbar() {
           <h1 className="logo me-auto me-lg-0">
             <Link to="/" onClick={closeMobileNav}>
               <img
-                src="/assets/img/utg-logo.png"
+                src="/assets/img/utg-logo.svg"
                 alt="UTG Logo"
                 className="img-fluid"
               />
@@ -53,8 +53,15 @@ export default function Navbar() {
                   About
                 </Link>
               </li>
+               {/* Services  */}
+                <li>
+                <Link to="/Services" className="nav-link scrollto" onClick={closeMobileNav}>
+                  Leistungen
+                </Link>
+              </li>
 
-              {/* Services Dropdown */}
+              {/* Services Dropdown 
+               {/*
               <li className="dropdown">
                 <a
                   href="#!"
@@ -88,7 +95,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li>*/}
 
               {/* Portfolio */}
               <li>
@@ -107,7 +114,7 @@ export default function Navbar() {
               {/* Contact */}
               <li>
                 <Link to="/contact" className="nav-link scrollto" onClick={closeMobileNav}>
-                  Contact
+                  Kontakt
                 </Link>
               </li>
 
@@ -127,7 +134,7 @@ export default function Navbar() {
             href="https://wa.me/qr/UD7U74XZS6PXN1"
             className="get-started-btn scrollto"
           >
-            Contact us
+            Kontaktieren Sie uns
           </a>
 
         </div>

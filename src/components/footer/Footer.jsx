@@ -10,11 +10,11 @@ export default function Footer() {
       <div className="row">
         <div className="col-lg-6 col-md-6">
           <div className="footer-info">
-            <h3>Cozy <span>Home Vienna</span></h3>
+            <h3>Ruth <span> Alonso Fox</span></h3>
             <p>
-              Wilhelminenstraße 31, <br />1160 Wien <br /> <br />
-              <strong>Phone:</strong> ⁦ +43 660 73 63 869 ⁩<br />
-              <strong>Email:</strong>  cozyhomevienna1160@gmail.com<br />
+              <br /> Wien, Österreich <br /> <br />
+              <strong>Phone:</strong> ⁦ +43 660 123 45 67 ⁩<br />
+              <strong>Email:</strong>  ruth.alonsofox@gmail.com<br />
             </p>
             <div className="social-links mt-3">
               <a href="https://www.facebook.com/" className="facebook"><i className="bx bxl-facebook" /></a>
@@ -34,7 +34,7 @@ export default function Footer() {
               <i className="bx bx-chevron-right" /> <Link to={"About"}>About us</Link>
             </li>
             <li>
-              <i className="bx bx-chevron-right" /> <Link to={"Services"}>Services</Link>
+              <i className="bx bx-chevron-right" /> <Link to={"Services"}>Leistungen</Link>
             </li>
             <li>
               <i className="bx bx-chevron-right" />
@@ -80,10 +80,10 @@ export default function Footer() {
   </div>
   <div className="container">
     <div className="copyright">
-      © Copyright <strong><span>Cozy Home Vienna.</span></strong>. All Rights Reserved
+      © Copyright <strong><span> Ruth <span> Alonso Fox</span>.</span></strong> All Rights Reserved
     </div>
     <div className="credits">
-      Designed by <a href="https://hussamfull.github.io/iPortfolio3/">Hussam Alnabelsi.</a>
+      Designed by <a href="https://portfolioalnabelsi.vercel.app/">Hussam Alnabelsi.</a>
     </div>
   </div>
 </footer>
