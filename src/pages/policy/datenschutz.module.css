@@ -1,0 +1,89 @@
+:root {
+  --text-color: #e2e8f0; /* لون النص الفاتح */
+  --bg-color: #1a202c; /* لون الخلفية الداكنة */
+  --card-bg-color: #2d3748; /* لون خلفية الأقسام */
+  --link-color: #63b3ed; /* لون الروابط الأزرق الفاتح */
+  --heading-color: #cbd5e0; /* لون العناوين الفاتح */
+}
+
+.datenschutzContainer {
+  padding: 50px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.datenschutzHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.datenschutzHeader h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--heading-color);
+  border-bottom: 2px solid var(--link-color);
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.datenschutzSection {
+  background-color: var(--card-bg-color);
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sectionTitle {
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 25px;
+}
+
+.sectionContent {
+  margin-bottom: 25px;
+}
+
+.sectionContent h3 {
+  font-size: 1.5em;
+  color: var(--link-color);
+  margin-bottom: 10px;
+}
+
+.sectionContent p {
+  font-size: 1em;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.sectionContent strong {
+  color: var(--heading-color);
+}
+
+.sectionContent a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.sectionContent a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .datenschutzContainer {
+    padding: 30px;
+  }
+  .datenschutzHeader h1 {
+    font-size: 2.5em;
+  }
+  .datenschutzSection {
+    padding: 25px;
+  }
+  .sectionTitle {
+    font-size: 1.8em;
+  }
+}

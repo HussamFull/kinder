@@ -1,0 +1,103 @@
+/* الألوان المستخدمة في التصميم */
+:root {
+  --text-color: #f1f2f6;
+  --bg-color: #2f3640;
+  --card-bg-color: #3b4252;
+  --link-color: #74b9ff;
+  --heading-color: #dfe4ea;
+}
+
+/* تنسيقات الحاوية الرئيسية للصفحة */
+.impressumPageContainer {
+  
+  padding: 0 20px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+/* تنسيقات العنوان الرئيسي */
+.impressumHeader {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.impressumHeader h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 5px;
+}
+
+.impressumHeader p {
+  font-size: 1.2em;
+  color: #a4b0be;
+}
+
+/* تنسيقات شبكة البطاقات (Grid) */
+.impressumGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* تنسيقات البطاقة الواحدة */
+.impressumCard {
+  background-color: var(--card-bg-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-color);
+}
+
+.impressumCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.impressumCard h3 {
+  font-size: 1.4em;
+  color: var(--heading-color);
+  border-bottom: 2px solid #57606f;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.impressumCard p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.impressumCard a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.impressumCard a:hover {
+  text-decoration: underline;
+}
+
+/* تنسيق البطاقات الكاملة العرض */
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+/* تنسيقات الخطوط العريضة */
+.impressumCard p strong {
+  color: var(--heading-color);
+}
+
+/* التجاوبية (Responsive Design) للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .impressumGrid {
+    grid-template-columns: 1fr;
+  }
+  .impressumHeader h1 {
+    font-size: 2.5em;
+  }
+}
