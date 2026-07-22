@@ -8,9 +8,9 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const serviceId = "service_p6g7o28";
-    const templateId = "template_uyv7nnj";
-    const publicKey = "6RUFfnDR32bhtNhi_";
+    const serviceId = "service_wh7bufq";
+    const templateId = "template_4p70tfi";
+    const publicKey = "kDuxrkdHny7mRTVWW";
 
     emailjs
       .sendForm(serviceId, templateId, form.current, publicKey)
