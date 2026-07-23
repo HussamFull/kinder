@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileNavActive, setMobileNavActive] = useState(false);
-  const [serviceOpen, setServiceOpen] = useState(false);
 
-  // دالة موحّدة لإغلاق النافبار والـ dropdown
   const closeMobileNav = () => {
     setMobileNavActive(false);
-    setServiceOpen(false);
   };
 
   const handleMobileNavToggle = () => {
@@ -17,11 +14,11 @@ export default function Navbar() {
 
   return (
     <>
-      <header id="header" className="fixed-top header-scrolled modern-navbar-header">
+      <header id="header" className="fixed-top modern-navbar-header">
         <div className="container d-flex align-items-center justify-content-between">
 
-          {/* Logo (Image + Text Side by Side) */}
-          <h1 className="logo me-auto me-lg-0 m-0">
+          {/* Logo */}
+          <h1 className="logo m-0 p-0">
             <Link to="/" onClick={closeMobileNav} className="d-flex align-items-center gap-2 text-decoration-none">
               <img
                 src="/assets/img/utg-logo.svg"
@@ -35,163 +32,156 @@ export default function Navbar() {
             </Link>
           </h1>
 
-          {/* Navbar */}
-          <nav
-            id="navbar"
-            className={`navbar order-last order-lg-0 ${
-              mobileNavActive ? "navbar-mobile" : ""
-            }`}
-          >
-            <ul className="d-flex align-items-center m-0 p-0 list-unstyled gap-1">
+          {/* Right Side Items (Contact Button + Menu Toggle) */}
+          <div className="d-flex align-items-center gap-2">
+            
+            {/* Desktop & Mobile Contact Button */}
+            <a
+              href="https://wa.me/qr/UD7U74XZS6PXN1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="custom-contact-btn d-inline-flex align-items-center gap-2"
+            >
+              <i className="ri-whatsapp-line fs-5" />
+              <span>Contact us</span>
+            </a>
 
-              {/* Home */}
-              <li>
-                <Link to="/" className="nav-link scrollto px-3 py-2 rounded-pill" onClick={closeMobileNav}>
-                  Home
-                </Link>
-              </li>
+            {/* Hamburger Toggle Button (يظهر في الموبايل إجباري) */}
+            <div className="mobile-nav-toggle-wrap" onClick={handleMobileNavToggle}>
+              <i className={`bi ${mobileNavActive ? "bi-x-lg" : "bi-list"} mobile-nav-icon`} />
+            </div>
 
-              {/* About */}
-              <li>
-                <Link to="/about" className="nav-link scrollto px-3 py-2 rounded-pill" onClick={closeMobileNav}>
-                  Über mich
-                </Link>
-              </li>
-
-              {/* Services / Leistungen */}
-              <li>
-                <Link to="/Services" className="nav-link scrollto px-3 py-2 rounded-pill" onClick={closeMobileNav}>
-                  Leistungen
-                </Link>
-              </li>
-
-              {/* Portfolio */}
-              <li>
-                <Link to="/portfolio" className="nav-link scrollto px-3 py-2 rounded-pill" onClick={closeMobileNav}>
-                  Portfolio
-                </Link>
-              </li>
-
-              {/* Booking */}
-              <li>
-                <Link to="/Booking" className="nav-link scrollto px-3 py-2 rounded-pill" onClick={closeMobileNav}>
-                  Buchen
-                </Link>
-              </li>
-
-              {/* Contact */}
-              <li>
-                <Link to="/contact" className="nav-link scrollto px-3 py-2 rounded-pill" onClick={closeMobileNav}>
-                  Kontakt
-                </Link>
-              </li>
-
-            </ul>
-
-            {/* Mobile toggle */}
-            <i
-              className={`bi bi-list mobile-nav-toggle ${
-                mobileNavActive ? "bi-x" : ""
-              }`}
-              onClick={handleMobileNavToggle}
-            />
-          </nav>
-
-          {/* WhatsApp Button (Get Started) */}
-          <a
-            href="https://wa.me/qr/UD7U74XZS6PXN1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="get-started-btn scrollto d-none d-lg-inline-flex align-items-center gap-2"
-          >
-            <i className="ri-whatsapp-line fs-5" />
-            <span>Jetzt anfragen</span>
-          </a>
+          </div>
 
         </div>
       </header>
 
-      {/* تنسيقات الـ CSS الخاصة بالنافبار */}
+      {/* Mobile Offcanvas Menu (القائمة الجانبية التي تفتح بالموبايل) */}
+      <div className={`mobile-offcanvas-menu ${mobileNavActive ? "offcanvas-active" : ""}`}>
+        <div className="offcanvas-header d-flex align-items-center justify-content-between p-4 border-bottom">
+          <span className="fw-bold text-white fs-5">
+            Ruth <span style={{ color: '#F2D6BD' }}>Alonso Fox</span>
+          </span>
+          <div className="mobile-close-wrap" onClick={closeMobileNav}>
+            <i className="bi bi-x-lg text-white fs-4" />
+          </div>
+        </div>
+        <nav className="offcanvas-nav p-4">
+          <ul className="m-0 p-0 list-unstyled d-flex flex-column gap-3">
+            <li><Link to="/" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Home</Link></li>
+            <li><Link to="/about" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Über mich</Link></li>
+            <li><Link to="/Services" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Leistungen</Link></li>
+            <li><Link to="/portfolio" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Portfolio</Link></li>
+            <li><Link to="/Booking" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Buchen</Link></li>
+            <li><Link to="/contact" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Kontakt</Link></li>
+          </ul>
+        </nav>
+      </div>
+
+      {/* خلفية معتمة خفيفة عند فتح القائمة */}
+      {mobileNavActive && (
+        <div className="offcanvas-backdrop-custom" onClick={closeMobileNav} />
+      )}
+
+      {/* التنسيقات */}
       <style>{`
         .modern-navbar-header {
-          background: rgba(35, 45, 40, 0.85) !important;
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
+          background: rgba(35, 45, 40, 0.95) !important;
+          backdrop-filter: blur(15px);
+          -webkit-backdrop-filter: blur(15px);
           border-bottom: 1px solid rgba(242, 214, 189, 0.15);
-          padding: 15px 0;
-          transition: all 0.3s ease;
+          padding: 12px 0;
+          z-index: 9997;
         }
 
-        #navbar ul li a.nav-link {
-          color: rgba(255, 255, 255, 0.85) !important;
-          font-weight: 500;
-          font-size: 0.95rem;
-          transition: all 0.3s ease;
-        }
-
-        #navbar ul li a.nav-link:hover,
-        #navbar ul li a.nav-link.active {
-          color: #F2D6BD !important;
-          background: rgba(242, 214, 189, 0.12);
-        }
-
-        .get-started-btn {
-          background: #BA8068 !important;
-          color: #fff !important;
+        .custom-contact-btn {
+          background: #BA8068;
+          color: #fff;
           border-radius: 50px;
-          padding: 8px 22px;
+          padding: 8px 18px;
           font-weight: 600;
           font-size: 0.9rem;
           box-shadow: 0 4px 15px rgba(0,0,0,0.15);
           transition: all 0.3s ease;
-          border: 1px solid rgba(255,255,255,0.2);
+          border: 1px solid rgba(242, 214, 189, 0.3);
           text-decoration: none;
+          white-space: nowrap;
         }
 
-        .get-started-btn:hover {
-          background: #C86D51 !important;
-          transform: translateY(-2px);
-          box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-          color: #fff !important;
+        .custom-contact-btn:hover {
+          background: #C86D51;
+          color: #fff;
         }
 
-        .mobile-nav-toggle {
-          color: #fff !important;
-          font-size: 28px;
+        .mobile-nav-toggle-wrap {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          background: rgba(242, 214, 189, 0.1);
+          border: 1px solid rgba(242, 214, 189, 0.3);
+          border-radius: 10px;
+          align-items: center;
+          justify-content: center;
           cursor: pointer;
-          display: none;
+          z-index: 10002;
         }
 
-        @media (max-width: 991px) {
-          .mobile-nav-toggle {
-            display: block;
-          }
-          #navbar {
-            background: rgba(35, 45, 40, 0.95);
-            backdrop-filter: blur(15px);
-            position: fixed;
-            top: 70px;
-            right: -100%;
-            width: 80%;
-            max-width: 300px;
-            height: calc(100vh - 70px);
-            transition: 0.3s;
-            padding: 30px;
-            box-shadow: -5px 0 25px rgba(0,0,0,0.3);
-          }
-          #navbar.navbar-mobile {
-            right: 0;
-          }
-          #navbar.navbar-mobile ul {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start !important;
-            gap: 15px !important;
-          }
-          #navbar ul li a.nav-link {
-            font-size: 1.1rem;
-            width: 100%;
-          }
+        .mobile-nav-icon {
+          color: #fff !important;
+          font-size: 22px;
+        }
+
+        .mobile-offcanvas-menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 85%;
+          max-width: 320px;
+          height: 100vh;
+          background: rgba(28, 37, 33, 0.99);
+          backdrop-filter: blur(20px);
+          transition: right 0.4s ease-in-out;
+          box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+          z-index: 10003;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .offcanvas-active {
+          right: 0 !important;
+        }
+
+        .offcanvas-header {
+          border-color: rgba(242, 214, 189, 0.15) !important;
+        }
+
+        .offcanvas-link {
+          color: rgba(255, 255, 255, 0.9) !important;
+          font-weight: 600;
+          font-size: 1.1rem;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          transition: all 0.3s ease;
+        }
+
+        .offcanvas-link:hover {
+          background: rgba(242, 214, 189, 0.15);
+          color: #F2D6BD !important;
+          transform: translateX(5px);
+        }
+
+        .mobile-close-wrap {
+          cursor: pointer;
+        }
+
+        .offcanvas-backdrop-custom {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0,0,0,0.6);
+          z-index: 10001;
         }
       `}</style>
     </>
