@@ -22,18 +22,18 @@ useEffect(() => {
 
     // قائمة الصور الخاصة بجميع الخدمات والأقسام
     const portfolioImages = [
-        { name: "Slide8", title: "Einfühlsame Kinderbegleitung" },
-        { name: "Slide1", title: "Pädagogische Materialien" },
-        { name: "Slide2", title: "Mentaltraining für Kinder" },
-        { name: "Slide3", title: "Trauer- & Abschiedsarbeit" },
-        { name: "Slide4", title: "Begleitung bei Übergängen" },
-        { name: "Slide5", title: "Geschützter Raum (Einzelsetting)" },
-        { name: "Slide6", title: "Impressionen & Einblicke" },
-        { name: "Slide7", title: "Unsere Räumlichkeiten" },
-        { name: "Slide9", title: "Beratung & Unterstützung" },
-        { name: "Slide10", title: "Lösungsorientierte Elternberatung " },
-        { name: "Slide11", title: "Entspannungsbereich" },
-        { name: "Slide12", title: "Spielecke für Kinder" },
+        { name: "Slide8", ext: "png", title: "Einfühlsame Kinderbegleitung" },
+        { name: "Slide1", ext: "png", title: "Pädagogische Materialien" },
+        { name: "Slide2", ext: "png", title: "Mentaltraining für Kinder" },
+        { name: "Slide3", ext: "png", title: "Trauer- & Abschiedsarbeit" },
+        { name: "Slide4", ext: "png", title: "Begleitung bei Übergängen" },
+        { name: "Slide5", ext: "png", title: "Geschützter Raum (Einzelsetting)" },
+        { name: "Slide6", ext: "png", title: "Impressionen & Einblicke" },
+        { name: "Slide7", ext: "png", title: "Unsere Räumlichkeiten" },
+        { name: "Slide9", ext: "png", title: "Beratung & Unterstützung" },
+        { name: "Slide10", ext: "jpeg", title: "Lösungsorientierte Elternberatung " }, // تم ضبط الامتداد هنا بناءً على المجلد
+        { name: "Slide11", ext: "png", title: "Entspannungsbereich" },
+        { name: "Slide12", ext: "png", title: "Spielecke für Kinder" },
         
     ];
 
@@ -54,23 +54,23 @@ useEffect(() => {
                         {portfolioImages.map((item, index) => (
                             <div key={index} className="col-lg-4 col-md-6 portfolio-item">
                                 <div className="portfolio-wrap rounded shadow-sm overflow-hidden">
-                                    <img 
-                                        src={`/assets/img/portfolio/${item.name}.png`} 
-                                        className="img-fluid w-100" 
-                                        alt={item.title} 
-                                        style={{ height: '260px', objectFit: 'cover' }}
-                                    />
+                                   <img 
+    src={`/assets/img/portfolio/${item.name}.${item.ext}`} 
+    className="img-fluid w-100" 
+    alt={item.title} 
+    style={{ height: '260px', objectFit: 'cover' }}
+/>
                                     <div className="portfolio-info">
                                         <h4>{item.title}</h4>
                                         <div className="portfolio-links">
-                                            <a 
-                                                href={`/assets/img/portfolio/${item.name}.png`} 
-                                                className="portfolio-lightbox" 
-                                                data-gallery="portfolioGallery"
-                                                title={item.title}
-                                            >
-                                                <i className="bx bx-plus"></i>
-                                            </a>
+                                           <a 
+    href={`/assets/img/portfolio/${item.name}.${item.ext}`} 
+    className="portfolio-lightbox" 
+    data-gallery="portfolioGallery"
+    title={item.title}
+>
+    <i className="bx bx-plus"></i>
+</a>
                                         </div>
                                     </div>
                                 </div>
