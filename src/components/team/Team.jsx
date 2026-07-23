@@ -59,7 +59,7 @@ export default function Team() {
                   <div className="col-md-5 text-center">
                     <div className="position-relative d-inline-block mb-3">
                       <img 
-                        src="assets/img/Slide9.png" 
+                        src="assets/img/Slide10.jpeg" 
                         className="img-fluid rounded-4 shadow" 
                         alt="Ruth Alonso Fox"
                         style={{ 

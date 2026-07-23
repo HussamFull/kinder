@@ -23,16 +23,16 @@ useEffect(() => {
     // قائمة الصور الخاصة بجميع الخدمات والأقسام
     const portfolioImages = [
         { name: "Slide8", ext: "png", title: "Einfühlsame Kinderbegleitung" },
-        { name: "Slide1", ext: "png", title: "Pädagogische Materialien" },
-        { name: "Slide2", ext: "png", title: "Mentaltraining für Kinder" },
-        { name: "Slide3", ext: "png", title: "Trauer- & Abschiedsarbeit" },
-        { name: "Slide4", ext: "png", title: "Begleitung bei Übergängen" },
-        { name: "Slide5", ext: "png", title: "Geschützter Raum (Einzelsetting)" },
-        { name: "Slide6", ext: "png", title: "Impressionen & Einblicke" },
-        { name: "Slide7", ext: "png", title: "Unsere Räumlichkeiten" },
-        { name: "Slide9", ext: "png", title: "Beratung & Unterstützung" },
+        { name: "T1", ext: "png", title: "Mit Herz" },
+        { name: "T2", ext: "png", title: "Mentaltraining für Kinder" },
+        { name: "T3", ext: "png", title: "Trauer- & Abschiedsarbeit" },
+        { name: "T4", ext: "png", title: "Begleitung bei Übergängen" },
+        { name: "T5", ext: "png", title: "Geschützter Raum (Einzelsetting)" },
+        { name: "T6", ext: "png", title: "Impressionen & Einblicke" },
+        { name: "T7", ext: "png", title: "Unsere Räumlichkeiten" },
+        { name: "T9", ext: "png", title: "Beratung & Unterstützung" },
         { name: "Slide10", ext: "jpeg", title: "Lösungsorientierte Elternberatung " }, // تم ضبط الامتداد هنا بناءً على المجلد
-        { name: "Slide11", ext: "png", title: "Entspannungsbereich" },
+        { name: "T8", ext: "png", title: "Einfühlsam begleiten " },
         { name: "Slide12", ext: "png", title: "Spielecke für Kinder" },
         
     ];
