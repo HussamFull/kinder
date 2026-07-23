@@ -90,7 +90,7 @@ export default function About() {
             <div className="col-lg-5 text-center" data-aos="fade-left">
               <div className="position-relative d-inline-block img-hover-zoom shadow-lg rounded-4">
                 <img 
-                  src="/assets/img/portfolio/Slide8.png" 
+                  src="/assets/img/Slide8.png" 
                   className="img-fluid rounded-4" 
                   alt="Ruth Alonso Fox" 
                   style={{ maxHeight: '350px', objectFit: 'cover' }}
