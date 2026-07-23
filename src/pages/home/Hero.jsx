@@ -61,9 +61,15 @@ export default function Hero() {
                     <div className="mini-icon-circle d-flex align-items-center justify-content-center">
                       <i className="ri-whatsapp-line fs-5" style={{ color: '#C86D51' }} />
                     </div>
-                    <a href="https://wa.me/qr/UD7U74XZS6PXN1" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
-                      Jetzt anfragen
-                    </a>
+                        <a 
+                          href="https://wa.me/436766423206?text=Hallo,%20ich%20möchte%20gerne%20einen%20Termin%20buchen%20und%20freue%20mich%20auf%20ihre%20Rückmeldung." 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-white text-decoration-none fw-semibold stretched-link" 
+                          style={{ fontSize: '0.95rem' }}
+                        >
+                          Jetzt anfragen
+                        </a>
                   </div>
                 </div>
 
@@ -76,7 +82,7 @@ export default function Hero() {
                     <div className="mini-icon-circle d-flex align-items-center justify-content-center">
                       <i className="ri-calendar-check-line fs-5" style={{ color: '#C86D51' }} />
                     </div>
-                    <Link to={"Booking"} className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
+                    <Link to={"Contact"} className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
                       Online buchen
                     </Link>
                   </div>

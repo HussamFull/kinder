@@ -184,9 +184,9 @@ export default function Service() {
               </p>
               <a 
                 className="cta-btn-custom shadow-lg" 
-                href="https://wa.me/message/7TEJZNO3QI2RM1" 
-                target="_blank" 
-                rel="noopener noreferrer"
+               href="https://wa.me/436766423206?text=Hallo,%20ich%20möchte%20gerne%20einen%20Termin%20buchen%20und%20freue%20mich%20auf%20ihre%20Rückmeldung."
+  target="_blank"
+  rel="noopener noreferrer"
               >
                 <i className="ri-whatsapp-line me-2 fs-5 align-middle"></i>
                 Jetzt unverbindlich anfragen

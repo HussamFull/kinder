@@ -106,9 +106,9 @@ export default function Team() {
                         <i className="bx bxl-linkedin fs-4"></i>
                       </a>
                       <a 
-                        href="https://wa.me/message/7TEJZNO3QI2RM1" 
-                        target="_blank" 
-                        rel="noreferrer" 
+                       href="https://wa.me/436766423206?text=Hallo,%20ich%20möchte%20gerne%20einen%20Termin%20buchen%20und%20freue%20mich%20auf%20ihre%20Rückmeldung."
+  target="_blank"
+  rel="noopener noreferrer"
                         className="btn btn-sm rounded-circle shadow-sm d-flex align-items-center justify-content-center"
                         style={{ width: '42px', height: '42px', backgroundColor: '#25D366', color: '#ffffff', border: 'none' }}
                       >

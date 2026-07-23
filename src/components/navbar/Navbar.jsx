@@ -36,15 +36,15 @@ export default function Navbar() {
           <div className="d-flex align-items-center gap-2">
             
             {/* Desktop & Mobile Contact Button */}
-            <a
-              href="https://wa.me/qr/UD7U74XZS6PXN1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="custom-contact-btn d-inline-flex align-items-center gap-2"
-            >
-              <i className="ri-whatsapp-line fs-5" />
-              <span>Contact us</span>
-            </a>
+           <a
+  href="https://wa.me/436766423206?text=Hallo,%20ich%20möchte%20gerne%20einen%20Termin%20buchen%20und%20freue%20mich%20auf%20ihre%20Rückmeldung."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="custom-contact-btn d-inline-flex align-items-center gap-2"
+>
+  <i className="ri-whatsapp-line fs-5" />
+  <span>Jetzt anfragen</span>
+</a>
 
             {/* Hamburger Toggle Button (يظهر في الموبايل إجباري) */}
             <div className="mobile-nav-toggle-wrap" onClick={handleMobileNavToggle}>
@@ -72,7 +72,6 @@ export default function Navbar() {
             <li><Link to="/about" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Über mich</Link></li>
             <li><Link to="/Services" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Leistungen</Link></li>
             <li><Link to="/portfolio" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Portfolio</Link></li>
-            <li><Link to="/Booking" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Buchen</Link></li>
             <li><Link to="/contact" className="offcanvas-link py-3 px-4 d-block rounded-3 text-decoration-none" onClick={closeMobileNav}>Kontakt</Link></li>
           </ul>
         </nav>
