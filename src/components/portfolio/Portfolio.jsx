@@ -55,7 +55,7 @@ useEffect(() => {
                             <div key={index} className="col-lg-4 col-md-6 portfolio-item">
                                 <div className="portfolio-wrap rounded shadow-sm overflow-hidden">
                                    <img 
-    src={`/assets/img/portfolio/${item.name}.${item.ext}`} 
+    src={`/assets/img/${item.name}.${item.ext}`} 
     className="img-fluid w-100" 
     alt={item.title} 
     style={{ height: '260px', objectFit: 'cover' }}
@@ -64,7 +64,7 @@ useEffect(() => {
                                         <h4>{item.title}</h4>
                                         <div className="portfolio-links">
                                            <a 
-    href={`/assets/img/portfolio/${item.name}.${item.ext}`} 
+    href={`/assets/img/${item.name}.${item.ext}`} 
     className="portfolio-lightbox" 
     data-gallery="portfolioGallery"
     title={item.title}
