@@ -29,7 +29,7 @@ export default function Hero() {
               {/* شارة اللقب بلون ترابي دافئ متناسق */}
               <span className="d-inline-block text-uppercase mb-3 px-4 py-2 rounded-pill shadow-sm" style={{
                 color: '#fff',
-                backgroundColor: 'rgba(186, 128, 104, 0.9)', // لون ترابي دافئ (Warm Clay)
+                backgroundColor: 'rgba(186, 128, 104, 0.9)',
                 fontSize: '0.85rem',
                 letterSpacing: '2.5px',
                 fontWeight: '600',
@@ -50,35 +50,36 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* الحاوية الكبرى الجامعة للأزرار بتصميم عصري راقي (Master Container) */}
+          {/* الحاوية الكبرى */}
           <div className="row justify-content-center" data-aos="zoom-in" data-aos-delay={250}>
-            <div className="col-xl-10 col-lg-11">
-              <div className="hero-nav-container p-3 p-md-4 rounded-pill d-flex flex-wrap justify-content-center align-items-center gap-3">
+            <div className="col-xl-10 col-lg-11 col-md-8">
+              {/* تم ضبط الحاوية لتكون شفافة تماماً وبدون أي حدود خارجية في الشاشات الصغيرة والمتوسطة */}
+              <div className="hero-nav-container p-0 rounded-pill d-flex flex-column flex-lg-row justify-content-center align-items-stretch align-items-lg-center gap-3" style={{ background: 'transparent', border: 'none' }}>
                 
                 {/* 1. Jetzt anfragen */}
-                <div className="hero-nav-item flex-fill text-center p-2">
-                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                <div className="hero-nav-item flex-fill text-center px-4 py-3 py-lg-2 rounded-pill" style={{ backgroundColor: 'rgba(44, 53, 48, 0.6)', backdropFilter: 'blur(5px)', border: '1px solid rgba(255, 255, 255, 0.15)' }}>
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none position-relative">
                     <div className="mini-icon-circle d-flex align-items-center justify-content-center">
                       <i className="ri-whatsapp-line fs-5" style={{ color: '#C86D51' }} />
                     </div>
-                        <a 
-                          href="https://wa.me/436766423206?text=Hallo,%20ich%20möchte%20gerne%20einen%20Termin%20buchen%20und%20freue%20mich%20auf%20ihre%20Rückmeldung." 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="text-white text-decoration-none fw-semibold stretched-link" 
-                          style={{ fontSize: '0.95rem' }}
-                        >
-                          Jetzt anfragen
-                        </a>
+                    <a 
+                      href="https://wa.me/436766423206?text=Hallo,%20ich%20möchte%20gerne%20einen%20Termin%20buchen%20und%20freue%20mich%20auf%20ihre%20Rückmeldung." 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-white text-decoration-none fw-semibold stretched-link" 
+                      style={{ fontSize: '0.95rem' }}
+                    >
+                      Jetzt anfragen
+                    </a>
                   </div>
                 </div>
 
-                {/* فاصل جمالي خفيف للشاشات الكبيرة */}
+                {/* فاصل جمالي للشاشات الكبيرة جداً فقط */}
                 <div className="nav-divider d-none d-lg-block"></div>
 
                 {/* 2. Online buchen */}
-                <div className="hero-nav-item flex-fill text-center p-2">
-                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                <div className="hero-nav-item flex-fill text-center px-4 py-3 py-lg-2 rounded-pill" style={{ backgroundColor: 'rgba(44, 53, 48, 0.6)', backdropFilter: 'blur(5px)', border: '1px solid rgba(255, 255, 255, 0.15)' }}>
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none position-relative">
                     <div className="mini-icon-circle d-flex align-items-center justify-content-center">
                       <i className="ri-calendar-check-line fs-5" style={{ color: '#C86D51' }} />
                     </div>
@@ -91,8 +92,8 @@ export default function Hero() {
                 <div className="nav-divider d-none d-lg-block"></div>
 
                 {/* 3. Leistungen */}
-                <div className="hero-nav-item flex-fill text-center p-2">
-                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                <div className="hero-nav-item flex-fill text-center px-4 py-3 py-lg-2 rounded-pill" style={{ backgroundColor: 'rgba(44, 53, 48, 0.6)', backdropFilter: 'blur(5px)', border: '1px solid rgba(255, 255, 255, 0.15)' }}>
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none position-relative">
                     <div className="mini-icon-circle d-flex align-items-center justify-content-center">
                       <i className="ri-service-line fs-5" style={{ color: '#C86D51' }} />
                     </div>
@@ -105,10 +106,10 @@ export default function Hero() {
                 <div className="nav-divider d-none d-lg-block"></div>
 
                 {/* 4. Portfolio */}
-                <div className="hero-nav-item flex-fill text-center p-2">
-                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                <div className="hero-nav-item flex-fill text-center px-4 py-3 py-lg-2 rounded-pill" style={{ backgroundColor: 'rgba(44, 53, 48, 0.6)', backdropFilter: 'blur(5px)', border: '1px solid rgba(255, 255, 255, 0.15)' }}>
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none position-relative">
                     <div className="mini-icon-circle d-flex align-items-center justify-content-center">
-                    <i className="bi bi-collection fs-5" style={{ color: '#C86D51' }} />
+                      <i className="bi bi-collection fs-5" style={{ color: '#C86D51' }} />
                     </div>
                     <Link to={"Portfolio"} className="text-white text-decoration-none fw-semibold stretched-link" style={{ fontSize: '0.95rem' }}>
                       Portfolio
@@ -119,8 +120,8 @@ export default function Hero() {
                 <div className="nav-divider d-none d-lg-block"></div>
 
                 {/* 5. Kontakt */}
-                <div className="hero-nav-item flex-fill text-center p-2">
-                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
+                <div className="hero-nav-item flex-fill text-center px-4 py-3 py-lg-2 rounded-pill" style={{ backgroundColor: 'rgba(44, 53, 48, 0.6)', backdropFilter: 'blur(5px)', border: '1px solid rgba(255, 255, 255, 0.15)' }}>
+                  <div className="d-flex align-items-center justify-content-center gap-2 text-decoder-none position-relative">
                     <div className="mini-icon-circle d-flex align-items-center justify-content-center">
                       <i className="ri-mail-send-line fs-5" style={{ color: '#C86D51' }} />
                     </div>
@@ -140,9 +141,6 @@ export default function Hero() {
     </>
   );
 }
-
-{/* */}
-
 
 
 
