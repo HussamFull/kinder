@@ -81,15 +81,15 @@ export default function About() {
             <div className="col-lg-7" data-aos="fade-right">
               <div className="quote-box-hover p-4 bg-white rounded-4 shadow-sm border-start border-4" style={{ borderColor: '#8a9a86' }}>
                 <p className="fs-5 fst-italic text-muted mb-0">
-                  Herzlich willkommen! Mein Name ist Ruth Alonso Fox. Ich bin Mutter von zwei Kindern, diplomierte Elementarpädagogin und befinde mich in der Ausbildung zur Lebens- und Sozialberaterin (LSB) unter Supervision. Seit über sechs Jahren begleite ich Kinder unterschiedlichen Alters mit viel Herz, Einfühlungsvermögen und fachlicher Kompetenz.
-                </p>
+Herzlich willkommen! Mein Name ist Ruth Alonso Fox. Ich bin Mutter von zwei Kindern, diplomierte Elementarpädagogin und befinde mich in der Ausbildung zur Lebens- und Sozialberaterin (LSB) unter Supervision. Seit vielen Jahren begleite ich Kinder jeden Alters mit viel Herz, Einfühlungsvermögen und fachlicher Kompetenz.                </p>
                 <p className="fs-5 fst-italic text-muted mb-0">
-                  Meine Termine,
+                  
 
-Ich biete Beratungstermine in Stockerau sowie fallweise in Wien an.
+              Ich biete Beratungstermine in Stockerau sowie fallweise auch in Wien an.
 
-Auf Wunsch sind auch Walk & Talk-Einheiten möglich. Dabei verbinden wir das Gespräch mit einem gemeinsamen Spaziergang in ruhiger Atmosphäre. Diese Form der Beratung empfinden viele Menschen als besonders wohltuend, befreiend und stärkend.
-                </p>
+              Auf Wunsch sind alternativ auch Walk-&-Talk-Einheiten möglich. 
+              Dabei verbinden wir das Gespräch mit einem gemeinsamen Spaziergang in ruhiger Atmosphäre. 
+              Diese Form der Beratung empfinden viele Menschen als besonders wohltuend, befreiend und stärkend.                </p>
               </div>
             </div>
 
